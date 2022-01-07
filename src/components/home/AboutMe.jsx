@@ -19,11 +19,11 @@ const AboutMe = ({ heading, message, link, imgSize, resume,image }) => {
   }, [link]);
 
   const handleRequest = async () => {
-    const instaLink = "https://www.instagram.com";
-    const instaQuery = "?__a=1";
+    const instaLink = "https://api.github.com/repos";
+    const instaQuery = "/portfolio";
     try {
       const response = await axios.get(instaLink + link + instaQuery);
-      setProfilePicUrl(response.data.graphql.user.profile_pic_url_hd);
+      setProfilePicUrl(response.data.owner.avatar_url);
     } catch (error) {
       setShowPic(false);
       console.error(error.message);

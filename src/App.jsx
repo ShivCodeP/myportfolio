@@ -13,7 +13,7 @@ import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Navigation from "./components/Navbar";
 import Skills from "./components/home/Skills";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
@@ -71,7 +71,7 @@ const App = () => {
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-      {navBar.show && <Navbar ref={titleRef} />}
+      {navBar.show && <Navigation ref={titleRef} />}
       <Route path="/" exact component={() => <Home ref={titleRef} />} />
       <Footer>
         {getInTouch.show && (
