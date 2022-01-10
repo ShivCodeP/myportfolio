@@ -21,6 +21,9 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
+          <Typist className="lead typist" cursor={{show:false}}>
+            <h1>Full Stack Developer</h1>
+          </Typist>
           <Typist className="lead typist" cursor={{ show: false }}>
             {" "}
             {message}

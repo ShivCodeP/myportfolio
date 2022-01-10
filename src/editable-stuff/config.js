@@ -71,7 +71,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "ShivCodeP",
   reposLength: 2,
-  specificRepos: ["ShivCodeP/portfolio","ShivCodeP/suduko-solver","pummysh/YesStyle","RajP62/Smallcase"]
+  specificRepos: ["ShivCodeP/myportfolio","ShivCodeP/suduko-solver","pummysh/YesStyle","RajP62/Smallcase"]
 };
 
 // Leadership SECTION
@@ -103,14 +103,16 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "MongoDB", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "Node Js", value: 70 },
-    { name: "Express Js", value: 80 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 70 },
-    { name: "HTML/CSS", value: 80 },
-    { name: "Tailwind", value: 90 }
+    { name: "Git Bash", link: {href:"https://www.gnu.org/software/bash/",img:"https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"} },
+    { name: "CSS", link: {href:"https://www.w3schools.com/css/",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"} },
+    { name: "Node Js", link: {href:"https://nodejs.org",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"} },
+    { name: "Express Js", link: {href:"https://expressjs.com",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"} },
+    { name: "JavaScript", link: {href:"https://developer.mozilla.org/en-US/docs/Web/JavaScript",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"} },
+    { name: "React", link: {href:"https://reactjs.org/",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"} },
+    { name: "HTML", link: {href:"https://www.w3.org/html/",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"} },
+    { name: "Tailwind", link: {href:"https://tailwindcss.com/",img:"https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"} },
+    {name:"redis",link:{href:"https://redis.io",img:"https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"}},
+    {name:"Redux",link:{href:"",img:"data:image/png;base64,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"}},
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -133,4 +135,16 @@ const getInTouch = {
   email: "pshivam762@gmail@gmail.com"
 };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch };
+// Contact me
+const contactMe = {
+  show: true,
+  mobile: "7011372816",
+  social: {
+    gmail:"pshivam762@gmail.com",
+    github:"https://github.com/ShivCodeP",
+    linkedin:"https://www.linkedin.com/in/shivamadityapandey/",
+    twitter:"https://twitter.com/ShivamAdityaPa2/"
+  }
+}
+
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch,contactMe };

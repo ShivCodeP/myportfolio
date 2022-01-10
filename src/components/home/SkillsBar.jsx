@@ -1,15 +1,12 @@
 import React from "react";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-function SkillsBar({ skill, value, isScrolled }) {
+function SkillsBar({ skill, link, isScrolled }) {
+
   return (
-    <div style={{ width: "95%" }}>
-      <p className="lead mb-1 mt-2">{skill}</p>
-      <ProgressBar
-        className={!isScrolled ? "progress" : " progress-bar-animation"}
-        now={value}
-      />
-    </div>
+    <>
+      <a href={link.href} target="_blank" rel="noreferrer" style={{width:"80px",height:"80px"}}><img src={link.img} alt={skill+"icon"} width="80" height="80"></img></a>
+    </>
   );
 }
 

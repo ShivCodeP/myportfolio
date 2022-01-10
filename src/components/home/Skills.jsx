@@ -2,6 +2,7 @@ import React from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import SkillsTab from "./SkillsTab";
+import SkillsGraphTab from "./SkillsGraph";
 import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
@@ -34,7 +35,7 @@ function Skills({ heading, hardSkills, softSkills }) {
             eventKey="hard-skills"
             title="Technical Skills"
           >
-            <Row className="pt-3 px-1">
+            <Row className="pt-3 px-1" style={{justifyContent:"center",gap:"1.5rem"}}>
               <SkillsTab skills={hardSkills} isScrolled={isScrolled} />
             </Row>
           </Tab>
@@ -44,7 +45,7 @@ function Skills({ heading, hardSkills, softSkills }) {
             title="Soft Skills"
           >
             <Row className="pt-3 px-1">
-              <SkillsTab skills={softSkills} isScrolled={isScrolled} />
+              <SkillsGraphTab skills={softSkills} isScrolled={isScrolled} />
             </Row>
           </Tab>
         </Tabs>

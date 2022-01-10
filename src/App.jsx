@@ -7,7 +7,8 @@ import {
   repos,
   leadership,
   skills,
-  getInTouch
+  getInTouch,
+  contactMe
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -15,6 +16,7 @@ import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navbar";
 import Skills from "./components/home/Skills";
+import ContactMe from "./components/home/ContactMe.jsx";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
 
@@ -80,7 +82,11 @@ const App = () => {
             message={getInTouch.message}
             email={getInTouch.email}
           />
-        )}
+          )}
+          <ContactMe 
+            mobile={contactMe.mobile}
+            social={contactMe.social}
+          ></ContactMe>
       </Footer>
     </BrowserRouter>
   );

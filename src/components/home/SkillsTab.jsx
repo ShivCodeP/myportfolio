@@ -1,5 +1,5 @@
 import React from "react";
-import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import SkillsBar from "./SkillsBar";
 
 function SkillsSection({ skills, isScrolled }) {
@@ -9,7 +9,7 @@ function SkillsSection({ skills, isScrolled }) {
         <SkillsBar
           key={`${skill}-${index}`}
           skill={skill.name}
-          value={skill.value}
+          link={skill.link}
           isScrolled={isScrolled}
         />
       ))}
@@ -20,18 +20,10 @@ function SkillsSection({ skills, isScrolled }) {
 function SkillsTab({ skills, isScrolled }) {
   return (
     <>
-      <Col xs={12} md={6}>
         <SkillsSection
-          skills={skills.slice(0, Math.floor(skills.length / 2))}
+          skills={skills}
           isScrolled={isScrolled}
         />
-      </Col>
-      <Col xs={12} md={6}>
-        <SkillsSection
-          skills={skills.slice(Math.floor(skills.length / 2), skills.length)}
-          isScrolled={isScrolled}
-        />
-      </Col>
     </>
   );
 }
