@@ -71,7 +71,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "ShivCodeP",
   reposLength: 2,
-  specificRepos: ["ShivCodeP/myportfolio","ShivCodeP/suduko-solver","pummysh/YesStyle","RajP62/Smallcase"]
+  specificRepos: [{link:"ShivCodeP/myportfolio",img:require("../assets/myportfolio.png")},{link:"ShivCodeP/suduko-solver",img:require("../assets/sudukosolver.png")},{link:"pummysh/YesStyle",img:require("../assets/yesstyle.png")},{link:"RajP62/Smallcase",img:require("../assets/smallcase.png")}]
 };
 
 // Leadership SECTION

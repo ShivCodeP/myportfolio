@@ -12,11 +12,13 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
-    homepage
+    homepage,
+    img
   } = value;
   return (
     <Col md={6}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+        <img src={img} style={{width:"100%"}}></img>
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>
