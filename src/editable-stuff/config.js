@@ -61,7 +61,7 @@ const about = {
   message:
     "I'm a software engineer who is passionate about making contributing to open-source more approachable, creating efficient application to solve people problem, and building community to solve tech related doubt and solve programming problems. Some technologies I enjoy working with include NodeJs, Express as Backend , MongoDB as a NoSQL Database and ReactJs, Javascript, HTML, CSS, Tailwindcss, SCSS as Frontend.",
   resume:
-    "https://drive.google.com/file/d/1xa0pbPaJj280pmd2emp7IUUZcIMgZVbV/view?usp=sharing"
+    "https://drive.google.com/file/d/1yj_fudqdRvEvG8bDhWR96lehIGaO9YzJ/view?usp=sharing"
 };
 
 // PROJECTS SECTION
